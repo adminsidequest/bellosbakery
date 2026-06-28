@@ -24,7 +24,6 @@
   overlay.className = "intro";
   overlay.setAttribute("aria-hidden", "true");
   overlay.innerHTML =
-    '<div class="intro__glow"></div>' +
     '<img class="intro__cat" src="images/bello.png" alt="" />';
   document.body.appendChild(overlay);
   document.documentElement.classList.add("intro-lock");
