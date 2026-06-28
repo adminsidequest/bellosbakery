@@ -307,10 +307,12 @@ body { animation: pageFade .55s ease both; }
     radial-gradient(circle at 50% 42%, rgba(255,255,255,.4) 0%, rgba(255,255,255,0) 42%),
     radial-gradient(circle at 50% 40%, #e7cdd4 0%, #d3aab5 52%, #bf94a2 100%);
   cursor: pointer;
+  will-change: opacity;
 }
 .intro__cat {
   position: relative; width: min(72vmin, 460px); height: auto;
   opacity: 0;
+  backface-visibility: hidden; -webkit-backface-visibility: hidden;
   animation: catSneak 1.6s ease .2s both;
 }
 .intro--out { animation: introFadeOut 1.6s ease forwards; pointer-events: none; }
@@ -319,8 +321,8 @@ body { animation: pageFade .55s ease both; }
 @keyframes introFadeOut { to { opacity: 0; transform: scale(1.04) } }
 @keyframes introPulse   { 0%,100% { transform: scale(.94); opacity: .5 } 50% { transform: scale(1.04); opacity: .85 } }
 @keyframes catSneak {
-  from { opacity: 0; transform: scale(.9)  translateY(18px); filter: blur(14px) drop-shadow(0 20px 30px rgba(120,40,72,0)); }
-  to   { opacity: 1; transform: scale(1)   translateY(0);    filter: blur(0)    drop-shadow(0 20px 30px rgba(120,40,72,.3)); }
+  from { opacity: 0; transform: scale(.92) translateY(16px); }
+  to   { opacity: 1; transform: scale(1)   translateY(0); }
 }
 
 @media (prefers-reduced-motion: reduce) { .intro { display: none; } }
