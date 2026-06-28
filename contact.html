@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Place an Order — Bello's Bakery | Judith Pacurucu</title>
+  <meta name="description" content="Place an order with Bello's Bakery. Send your order request through the form, or reach out by email or Instagram." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/bellosbakerylogo.png" />
+</head>
+<body data-page="contact">
+
+  <header class="nav" id="nav"></header>
+
+  <section class="contact section section--first" id="contact">
+    <div class="section__head reveal">
+      <p class="section__eyebrow">Get in Touch</p>
+      <h1 class="section__title">Place an Order</h1>
+    </div>
+
+    <div class="contact__grid">
+      <div class="contact__info reveal">
+        <p>Tell us what you'd like and when you need it, and we'll get back to you to confirm the details. Prefer to message? Use the quick links below.</p>
+
+        <div class="contact__buttons">
+          <a class="btn btn--primary btn--lg" href="mailto:Bellosbakery04@gmail.com?subject=Bakery%20Order%20Inquiry">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            Email Us
+          </a>
+          <a class="btn btn--ghost btn--lg" href="https://www.instagram.com/_bellosbakery/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+            DM on Instagram
+          </a>
+        </div>
+
+        <ul class="contact__details">
+          <li><strong>Email</strong><a href="mailto:Bellosbakery04@gmail.com">Bellosbakery04@gmail.com</a></li>
+          <li><strong>Instagram</strong><a href="https://www.instagram.com/_bellosbakery/" target="_blank" rel="noopener">@_bellosbakery</a></li>
+        </ul>
+      </div>
+
+      <!-- Order form: powered by Formspree (free). See README step 3 for setup. -->
+      <form class="contact__form reveal" id="orderForm"
+            action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="field">
+          <label for="order">What would you like to order?</label>
+          <textarea id="order" name="order" rows="5" placeholder="e.g. 1 box of 12 macarons (Nutella + Tiramisu), 6 croissants — needed by Saturday" required></textarea>
+        </div>
+        <input type="hidden" name="_subject" value="New order from Bello's Bakery website" />
+        <button type="submit" class="btn btn--primary btn--full btn--lg">Send Order Request</button>
+        <p class="form__status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer" id="siteFooter"></footer>
+
+  <script src="js/site.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

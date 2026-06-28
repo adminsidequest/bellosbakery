@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Bello's Bakery | Judith Pacurucu</title>
+  <meta name="description" content="A portfolio of pastry work by Judith Pacurucu — plated desserts, chocolate & petit fours, and custom pastry art. Click any photo to view it fullscreen." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="images/bellosbakerylogo.png" />
+</head>
+<body data-page="portfolio">
+
+  <header class="nav" id="nav"></header>
+
+  <section class="portfolio section section--first" id="portfolio">
+    <div class="section__head reveal">
+      <p class="section__eyebrow">The Work</p>
+      <h1 class="section__title">Portfolio</h1>
+      <p class="section__lead">A selection of pastry work emphasizing flavor, texture, and presentation. Click any photo to view it fullscreen and scroll through the gallery.</p>
+    </div>
+
+    <div class="filters reveal" id="filters">
+      <button class="filter is-active" data-filter="all">All</button>
+      <button class="filter" data-filter="plated">Plated Desserts</button>
+      <button class="filter" data-filter="chocolate">Chocolate &amp; Petit Fours</button>
+      <button class="filter" data-filter="custom">Custom &amp; Pastry Art</button>
+      <button class="filter" data-filter="bread">Conchas &amp; Pan Dulce</button>
+    </div>
+
+    <div class="gallery" id="gallery"><!-- generated in js/main.js --></div>
+
+    <div class="featured__cta reveal" style="margin-top:48px">
+      <a href="contact.html" class="btn btn--primary btn--lg">Order Something Custom</a>
+    </div>
+  </section>
+
+  <footer class="footer" id="siteFooter"></footer>
+
+  <script src="js/site.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
